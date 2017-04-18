@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  tomcat:
+    access-log-enabled: true
+    basedir: D:/bootTmpNew
+spring:
+  datasource:
+    name: testboot
+    url: jdbc:mysql://192.168.8.157:3306/testboot
+    username: client
+    password: 123456
+mybatis: 
+  mapperLocations: classpath*:**/mappers/*.xml
+  typeAliasesPackage: cn.lby.entity
+logging:
+  file: D:/springboot-tomcat-tmp/myapp.log
