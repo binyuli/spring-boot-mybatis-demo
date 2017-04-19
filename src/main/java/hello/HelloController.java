@@ -12,7 +12,7 @@ public class HelloController {
 		return "你好，世界！";
 	}
 	
-	@RequestMapping("/{myName}")
+	@RequestMapping("/hello/{myName}")
 	public String index(@PathVariable String myName){
 		return "hello " + myName +" !!";
 	}

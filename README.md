@@ -6,7 +6,7 @@
 的方式或外部 web 容器都正常,很诡异);
 ## 关于几个 controller
 * Application 是项目启动入口在 IDE 中也经常运行它来做测试，这不用说，要强调的是 StarterOutside , 在外部 web 服务器部署项目时需要用到其当中的配置(打包时注意打成 war);
-* HelloController 与 SampleController 比较了传统的 @Controller 注解与 spring-boot 特有的 @RestController 注解在配置上的细微差别;
+* HelloController 与 SampleController 比较了传统的 @Controller 注解与 spring-boot 中惯用的 @RestController 注解在配置上的细微差别;
 * UserController 是 mybatis 两种注入 mapper 方式的案例，post请求如果懒得用其他工具可在 /newUser.html 页面中进行。在单独使用基于注解的方式开展项目时，记得将 application.properties/yml 文件当中的 mybatis.mapperLocations
 去掉;
 ## 配置文件
