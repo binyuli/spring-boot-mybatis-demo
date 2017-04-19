@@ -14,3 +14,8 @@ mybatis:
   typeAliasesPackage: cn.lby.entity
 logging:
   file: D:/springboot-tomcat-tmp/myapp.log
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        
