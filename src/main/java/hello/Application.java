@@ -18,16 +18,15 @@ public class Application {
     @Autowired
     private DataSource ds;
 
-    @RequestMapping("/")
+    @RequestMapping("/datasource")
     String home() {
     	logger.info("Datasource: " + ds.toString());
-        return "hello binye !";
+        return ds.toString();
     }
 
     public static void main(String[] args) {
 
-
-        SpringApplication.run(Application.class, args);
+    	SpringApplication.run(Application.class, args);
 
         logger.info("------------------------------------------");
         logger.info("myapp start in Application");

@@ -10,12 +10,12 @@ public class SampleController {
 	@RequestMapping("/home")
 	String home() {
 //		return "hello binye."; // 不加@ResponseBody无法直接返回字符串
-		return "index";
+		return "html";
 	}
 
-	@RequestMapping("/index")
+	@RequestMapping("/html")
 	@ResponseBody
-	String index() {
+	String html() {
 		return "<html><head><title>Hello World!</title></head><body><h1>Hello World!</h1><p>This is my first web site</p></body></html>";
 	}
 
