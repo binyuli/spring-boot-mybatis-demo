@@ -10,7 +10,7 @@ spring:
     username: client
     password: 123456
 mybatis: 
-  mapperLocations: classpath*:**/mappers/*.xml
+  mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: cn.lby.entity
 logging:
   file: D:/springboot-tomcat-tmp/myapp.log

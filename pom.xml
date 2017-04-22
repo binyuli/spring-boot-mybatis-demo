@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>binye.web</groupId>
   <artifactId>spring-boot-mybatis-demo</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>spring-boot-mybatis-demo</name>
   <url>http://maven.apache.org</url>

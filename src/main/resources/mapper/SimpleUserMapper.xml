@@ -6,16 +6,24 @@
         <result column="name" property="name" />
         <result column="email" property="email" />
     </resultMap>
-    
+        
+	<sql id="Base_Column_List" >
+	    id, name, email 
+	</sql>
+
     <select id="findAllUsers" resultMap="UserResultMap">
-        select id, name, email from users
+        select 
+		<include refid="Base_Column_List" />
+		from users
+    </select>
+     
+    <select id="findUserById" resultMap="UserResultMap" parameterType="java.lang.Integer">
+        select
+		<include refid="Base_Column_List" />
+		from users WHERE id=#{id}
     </select>
  
-    <select id="findUserById" resultMap="UserResultMap">
-        select id, name, email from users WHERE id=#{id}
-    </select>
- 
-    <insert id="insertUser" parameterType="cn.lby.entity.User">
+     <insert id="insertUser" parameterType="cn.lby.entity.User">
         insert into users(name,email) values(#{name},#{email})
     </insert>
 </mapper>
